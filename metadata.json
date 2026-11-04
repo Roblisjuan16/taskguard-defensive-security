@@ -1,0 +1,6 @@
+{
+  "name": "TaskGuard - Plataforma Monolítica Segura",
+  "description": "Aplicación web monolítica con autenticación real basada en cookies HttpOnly, autorización y aislamiento estricto por usuario, CRUD de tareas, bitácora de IA y matriz de pruebas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,198 @@
+{
+  "users": [
+    {
+      "id": "usr_alice_001",
+      "email": "alice@example.com",
+      "name": "Alice Johnson",
+      "passwordHash": "fa93cc418c030c11db7c895e070b1157542cc257acb130a307f40c002aa3cb259efec1def720370eda4c761644adc039748bc6df4393e56fcbfb3232b2397826",
+      "salt": "9ddfb13b6b09fa7a5173472b59d456e5",
+      "createdAt": "2026-10-29T23:50:00.663Z"
+    },
+    {
+      "id": "usr_bob_002",
+      "email": "bob@example.com",
+      "name": "Bob Miller",
+      "passwordHash": "42bb79eb3c0f515b9e4ac86e17b38b48990c9fe9face3ab2861fcb9b0fd29e2216f3ae650905cddda7d64f62951ef76c1cda3c1b30bedae6014cb662439a5aa3",
+      "salt": "a9bb76ead162c1e5f8931f41bae34eed",
+      "createdAt": "2026-10-29T23:50:00.663Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "d13c1b290d514ac9eb7bf46ee4bec6ca47ccf6582e9e24a41765370251912fa5",
+      "userId": "usr_alice_001",
+      "csrfToken": "e2564d262a399e4f65f61993f3dfca55e9f7f4f7d099732f",
+      "createdAt": "2026-10-29T23:50:34.676Z",
+      "expiresAt": 1793404234676
+    },
+    {
+      "id": "b7d840c7813aadcf631f04f9a40ff0a1c387bdb32dcbd14147c215e8b8986537",
+      "userId": "usr_alice_001",
+      "csrfToken": "10285a60ccb66faf9736c37ac5cf01d05012cb3df0dbcfbb",
+      "createdAt": "2026-10-29T23:55:32.401Z",
+      "expiresAt": 1793404532401
+    },
+    {
+      "id": "a65a1f5b448705f9a19e550085178f3af120763f43c52181317396ee535749ca",
+      "userId": "usr_alice_001",
+      "csrfToken": "cf88292f37586826773b2d3c321b4ae8200372d879870001",
+      "createdAt": "2026-10-29T23:59:52.474Z",
+      "expiresAt": 1793404792474
+    },
+    {
+      "id": "35435d678f53d0af075ec54d4efc98a5651638c1249c9fd2b7ea75fe6d53bcdb",
+      "userId": "usr_alice_001",
+      "csrfToken": "1c370fa7f01875b54a41c355637a3d4c8fa5d66fd809b3fc",
+      "createdAt": "2026-10-30T00:13:07.849Z",
+      "expiresAt": 1793405587849
+    },
+    {
+      "id": "5a5fb896bdf44539ebcfbb1d9872f318e6fada7f9ef141eb49b90e7c0593db5e",
+      "userId": "usr_alice_001",
+      "csrfToken": "67983cabc819ae7dcb4172adf16b7c5bd3f862e2f341bad4",
+      "createdAt": "2026-10-30T00:25:25.241Z",
+      "expiresAt": 1793406325241
+    },
+    {
+      "id": "5bd74734418bbd88083752fadf9d9f35c16f266e92dbf7a825d524b9051bc825",
+      "userId": "usr_alice_001",
+      "csrfToken": "4a0f929a0a7a94c36da709ae7502339fbc56cee6171b5ab7",
+      "createdAt": "2026-10-30T00:32:29.546Z",
+      "expiresAt": 1793406749546
+    },
+    {
+      "id": "a0e4139825e1c266f9a91bd2e9f09676daff1e59219c67500671ee9831f2cc89",
+      "userId": "usr_alice_001",
+      "csrfToken": "0d13ef3486e2d85aa6e9ca1289dcd5ffcb9ccee704779b8e",
+      "createdAt": "2026-10-30T00:36:38.097Z",
+      "expiresAt": 1793406998097
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tsk_alice_001",
+      "userId": "usr_alice_001",
+      "title": "Preparar informe de auditoría de seguridad",
+      "description": "Verificar almacenamiento seguro de contraseñas y aislamiento entre usuarios en el backend.",
+      "priority": "urgent",
+      "status": "in_progress",
+      "dueDate": "2026-11-05",
+      "createdAt": "2026-10-29T23:50:00.663Z",
+      "updatedAt": "2026-10-29T23:50:00.663Z"
+    },
+    {
+      "id": "tsk_alice_002",
+      "userId": "usr_alice_001",
+      "title": "Revisar encabezados HttpOnly y SameSite en cookies",
+      "description": "Asegurar que la cookie de sesión no pueda ser accedida desde scripts del navegador (anti-XSS).",
+      "priority": "high",
+      "status": "completed",
+      "dueDate": "2026-10-31",
+      "createdAt": "2026-10-29T23:50:00.663Z",
+      "updatedAt": "2026-10-29T23:50:00.663Z"
+    },
+    {
+      "id": "tsk_alice_003",
+      "userId": "usr_alice_001",
+      "title": "Documentar bitácora de iteraciones con agente IA",
+      "description": "Registrar prompts, propuestas y correcciones humanas según rúbrica.",
+      "priority": "medium",
+      "status": "pending",
+      "dueDate": "2026-11-10",
+      "createdAt": "2026-10-29T23:50:00.663Z",
+      "updatedAt": "2026-10-29T23:50:00.663Z"
+    },
+    {
+      "id": "tsk_bob_001",
+      "userId": "usr_bob_002",
+      "title": "Plan de pruebas de penetración IDOR",
+      "description": "Verificar que Bob no pueda acceder ni modificar las tareas privadas de Alice bajo ninguna circunstancia.",
+      "priority": "urgent",
+      "status": "pending",
+      "dueDate": "2026-11-02",
+      "createdAt": "2026-10-29T23:50:00.663Z",
+      "updatedAt": "2026-10-29T23:50:00.663Z"
+    },
+    {
+      "id": "tsk_bob_002",
+      "userId": "usr_bob_002",
+      "title": "Configurar variables de entorno y script reproducible",
+      "description": "Asegurar que la aplicación levante limpiamente con npm install && npm run dev.",
+      "priority": "low",
+      "status": "completed",
+      "dueDate": "2026-10-30",
+      "createdAt": "2026-10-29T23:50:00.663Z",
+      "updatedAt": "2026-10-29T23:50:00.663Z"
+    },
+    {
+      "id": "tsk_1793317834682_egsm9",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-29T23:50:34.682Z",
+      "updatedAt": "2026-10-29T23:50:34.682Z"
+    },
+    {
+      "id": "tsk_1793318132407_3bmnz",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-29T23:55:32.407Z",
+      "updatedAt": "2026-10-29T23:55:32.407Z"
+    },
+    {
+      "id": "tsk_1793318392480_0q4bz",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-29T23:59:52.480Z",
+      "updatedAt": "2026-10-29T23:59:52.480Z"
+    },
+    {
+      "id": "tsk_1793319187856_so8on",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-30T00:13:07.856Z",
+      "updatedAt": "2026-10-30T00:13:07.856Z"
+    },
+    {
+      "id": "tsk_1793319925248_8r3ko",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-30T00:25:25.248Z",
+      "updatedAt": "2026-10-30T00:25:25.248Z"
+    },
+    {
+      "id": "tsk_1793320349552_smnee",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-30T00:32:29.552Z",
+      "updatedAt": "2026-10-30T00:32:29.552Z"
+    },
+    {
+      "id": "tsk_1793320598106_31smt",
+      "userId": "usr_alice_001",
+      "title": "Documento Confidencial de Alice",
+      "description": "Información estrictamente privada protegida por aislamiento de backend.",
+      "priority": "urgent",
+      "status": "pending",
+      "createdAt": "2026-10-30T00:36:38.106Z",
+      "updatedAt": "2026-10-30T00:36:38.106Z"
+    }
+  ]
+}
